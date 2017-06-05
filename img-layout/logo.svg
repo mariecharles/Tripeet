@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="188" viewBox="0 0 500 188">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 180px;
+        font-family: Lobster;
+      }
+
+      .cls-2 {
+        fill: #6decaf;
+      }
+    </style>
+  </defs>
+  <text id="Tripeet" class="cls-1" x="8" y="12">Trip<tspan class="cls-2">ee</tspan>t</text>
+</svg>

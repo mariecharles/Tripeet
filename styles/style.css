@@ -1,0 +1,1449 @@
+@charset "utf-8";
+
+
+
+/* ----- Correction bug ---- */
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after
+{
+	box-sizing: border-box;
+}
+
+
+.clearfix:before,
+.clearfix:after
+{
+	content: "";
+	display: table;
+}
+
+.clearfix:after
+{
+	clear: both;
+}
+
+html
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 62.5%;
+}
+
+body
+{
+	max-width: 1490px;
+	width: 100%;
+	margin: auto;
+	color: black;
+	font-size: 1.4rem;
+}
+
+input,
+textarea
+{
+	color: black;
+	font-size: 1.2rem;
+	padding: 4px;
+	border: solid 1px lightgrey;
+	font-family: 'Open Sans', sans-serif;
+}
+
+img
+{
+	display: block;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: 400;
+}
+
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    lightgrey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    lightgrey;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    lightgrey;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:   lightgrey;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    lightgrey;
+}
+
+textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    lightgrey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    lightgrey;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    lightgrey;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:   lightgrey;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    lightgrey;
+}
+
+footer input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    black;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    black;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:   black;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    black;
+}
+
+main
+{
+	position: relative;
+}
+
+.profile-tabs
+{
+	position: absolute;
+	position: fixed;
+	background: white;
+	border-radius: 5px;
+	width: 88px;
+	font-size: 1rem;
+	z-index: 1;
+}
+
+.profile-tabs li
+{
+	padding: 15px 10px;
+	text-align: center;
+	border-bottom: solid 1px lightgrey;
+}
+
+.profile-tabs li:last-child
+{
+	border: none;
+}
+
+.profile-tabs img
+{
+	margin: 0 auto 7px auto;
+}
+
+.inscription-btn
+{
+	padding: 10px 30px;
+	color: #fff;
+	text-align: center;
+	border: solid 1px #fff;
+	font-size: 2.4rem;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+#home h2,
+#paris h2,
+#contact h2,
+#mentions-legales
+{
+	text-align: center;
+	font-size: 2.4rem;
+	margin: 40px 0;
+}
+
+/*-------------------------------------
+--------------------------------------
+------////// H E A D E R ////// --------
+--------------------------------------
+--------------------------------------*/
+
+header
+{
+	padding: 25px 0 25px 25px;
+	border-bottom: lightgrey solid 1px;
+}
+
+h1
+{
+	float: left;
+}
+
+h1 img
+{
+	max-width: 130px;
+	height: 40px;
+}
+
+header .rapid-search,
+header nav
+{
+	float: right;
+}
+
+.rapid-search
+{
+	border: 1px solid grey;
+	width: 220px;
+	padding: 6px 10px;
+	border-radius: 50px;
+	margin-right: 2%;
+}
+
+.rapid-search input
+{
+	border: none;
+	height: 100%;
+	border-right: solid 1px lightgrey;
+	width: 170px;
+	float: left;
+	outline: none;
+}
+
+.rapid-search img
+{
+	float: right;
+	width: 15px;
+	margin-top: 2px;
+}
+
+header nav
+{
+	padding: 30px 15px 15px 15px;
+	margin-top: -25px;
+	cursor: pointer;
+}
+
+
+#paris h2 span
+{
+	color: #6DECAF;
+}
+
+/*-------------------------------------
+-------------------------------------
+---------////// H O M E ////// --------
+-------------------------------------
+--------------------------------------*/
+
+
+/*-------------------------------------
+----------------- INTRO ---------------
+--------------------------------------*/
+
+.intro
+{
+	position: relative;
+	height: 580px;
+}
+
+.intro img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.intro img, 
+.accroche, 
+.search
+{
+	position: absolute;
+}
+
+.accroche
+
+{
+	padding: 300px 350px;
+	text-align: center;
+	width: 100%;
+}
+
+.accroche p
+
+{
+	font-size: 5.8rem;
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 30px;
+
+}
+
+.search
+{
+	right: 50px;
+	top: 100px;
+	background: #F8F8F9;
+	border-radius: 5px;
+	padding: 10px 0;
+	width: 240px;
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+.search div
+{
+	padding: 20px;
+	border-bottom: solid 1px lightgrey;
+}
+ 
+.search .which-date div
+{
+	border: none;
+	padding: initial;
+	float: left;
+	width: 50%;
+}
+
+.search .which-date div:last-child
+{
+	margin-left: -1px;
+}
+
+.search div:last-child
+{
+	border: none;
+}
+
+.search input, label
+{
+	display: block;
+}
+
+.search label
+{
+	margin-bottom: 10px;
+}
+
+.search input
+{
+	width: 100%;
+}
+
+.search div:nth-child(4) input
+{
+	padding: 10px 30px;
+	color: #6DECAF;
+	text-align: center;
+	border: solid 1px #6DECAF;
+	font-weight: 300;
+	background: transparent;
+	cursor: pointer;
+}
+
+
+/*-------------------------------------
+----------- EVENEMENTS/HOME -----------
+--------------------------------------*/
+
+.next-events
+{
+	padding: 0 100px;
+}
+
+.next-events article
+{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	border-radius: 2px;
+	-moz-box-shadow: .5px .5px 10px 0px #E0DDDD;
+	-webkit-box-shadow: .5px .5px 10px 0px #E0DDDD;
+	-o-box-shadow: .5px .5px 10px 0px #E0DDDD;
+	box-shadow: .5px .5px 10px 0px #E0DDDD;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#E0DDDD, Direction=134, Strength=10);
+}
+
+.next-events article:last-child
+{
+	float: right;
+	margin-right: 0;
+}
+
+.next-events figure img
+{
+	width: 100%;
+	height: auto;
+}
+
+.next-events .event-info
+{
+	padding: 20px;
+	text-align: center;
+}
+
+.next-events .event-info img
+{
+	margin: 2px auto;
+}
+
+.next-events .event-info h3
+{
+	font-size: 2rem;
+	text-align: center;
+}
+
+.next-events .event-info h4
+{
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.next-events .event-info p
+{
+	margin: 20px 0;
+	text-align: left;
+}
+
+.next-events .event-info span,
+.next-events .event-info a
+{
+	padding: 5px 10px;
+	color: black;
+	text-align: center;
+	border: solid 1px  black;
+	font-size: 1.2rem;
+}
+
+.next-events .event-info span
+{
+	margin-right: 20px;
+	color: #6DECAF;
+	border: solid 1px #6DECAF;
+	cursor: pointer;
+}
+
+
+/*-------------------------------------
+--------------- COMMUNAUTE ------------
+--------------------------------------*/
+
+.become-one .wrap-section
+{
+	position: relative;
+	height: 450px;
+	background: red;
+}
+
+.become-one .wrap-section img, 
+.become-one .wrap-section div
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.become-one .wrap-section div
+{
+	background: rgba(0,0,0,.8);
+	color: white;
+	font-size: 1.6rem;
+	padding: 50px 100px;
+	font-weight: 300;
+}
+
+.become-one .wrap-section a
+{
+	color: #fff;
+}
+
+.become-one .wrap-section div p
+{
+	width: 45%;
+	float: left;
+	margin-right: 30%;
+}
+
+.become-one .wrap-section span
+{
+	display: block;
+	float: left;
+	margin-top: 150px;
+	font-size: initial;
+	background: rgba(255,255,255,.1);
+	padding: 10px 50px;
+	width: 200px;
+}
+
+.become-one article
+{
+	padding: 50px 100px;
+}
+
+.become-one .europe div
+{
+	float: right;
+	width: 53%;
+}
+
+.become-one .europe div p:first-child
+{
+	font-size: 2.4rem;
+	margin-bottom: 60px;
+}
+
+.become-one .europe img
+{
+	float: left;
+	max-width: 40%;
+	width: 100%;
+}
+
+.become-one .europe .inscription-btn,
+.become-one .links .inscription-btn
+
+{
+	color: #6DECAF;
+	border: solid 1px #6DECAF;
+	font-size: initial;
+	display: inline-block;
+	margin: 50px auto 0 auto;
+}
+
+.become-one .links p
+{
+	text-align: center;
+	font-size: 2.4rem;
+}
+
+.become-one .links p:first-child
+{
+	margin-bottom: 90px;
+}
+
+.become-one .links div:nth-child(2)
+{
+	float: left;
+	width: 45%;
+}
+
+.become-one .links div:nth-child(2) p
+{
+	text-align: left;
+	font-size: 1.4rem;
+}
+
+
+.become-one .links div:nth-child(3)
+{
+	float: right;
+	width: 45%;
+	position: relative;
+}
+
+.become-one .links div:nth-child(3) img.layout-links
+{
+	left: 30%;
+}
+
+.become-one .links div:nth-child(3) .wrap-img,
+.become-one .links div:nth-child(3) img.layout-links
+
+{
+	position: absolute;
+}
+
+.become-one .links div:nth-child(3) .wrap-img
+{
+	width: 100%;
+}
+
+.become-one .links div:nth-child(3) .wrap-img .vignette
+{
+	float: left;
+	width: 90px;
+	margin: 0 22% 30px 0;
+}
+
+.become-one .links div:nth-child(3) .wrap-img .vignette:nth-child(3n+3)
+{
+	float: right;
+	margin-right: 0;
+}
+
+.become-one .links div:nth-child(3) .wrap-img .vignette:nth-child(4)
+{
+	clear: both;	
+}
+
+.become-one .links div:nth-child(3) .wrap-img p
+{
+	clear: both;
+	text-align: center;	
+}
+
+/*-------------------------------------
+--------------------------------------
+--////// P A G E   V I L L E  //////-- 
+--------------------------------------
+--------------------------------------*/
+
+/*-------------------------------------
+--------------- BANNIERE --------------
+--------------------------------------*/
+
+.banniere
+{
+	position: relative;
+	height: 400px;
+}
+
+.banniere img,
+.banniere div
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.banniere div
+{
+	background: rgba(0,0,0,.5);
+	color: white;
+	font-size: 5.8rem;
+	text-align: center;
+}
+
+.banniere div p
+{
+	padding: 150px 350px;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+}
+
+
+/*-------------------------------------
+------------- EVENEMENTS --------------
+--------------------------------------*/
+
+.moment-events
+{
+	padding: 40px 100px; 
+}
+
+.our-events,
+.your-events
+{
+	width: 49.8%;
+	float: left;
+	background: #F8F8F9;
+	margin-right: .4%;
+	padding: 20px 0;
+}
+
+.our-events p:first-child,
+.your-events p:first-child
+{
+	font-size: 2.2rem;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+.your-events
+{
+	float: right;
+	margin-right: 0;
+}
+
+.bloc-event
+{
+	background: #fff;
+	border-radius: 2px;
+	-moz-box-shadow: .5px .5px 10px 0px #E0DDDD;
+	-webkit-box-shadow: .5px .5px 10px 0px #E0DDDD;
+	-o-box-shadow: .5px .5px 10px 0px #E0DDDD;
+	box-shadow: .5px .5px 10px 0px #E0DDDD;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#E0DDDD, Direction=134, Strength=10);
+}
+
+.bloc-event 
+{
+	width: 90%;
+	margin: 0 auto 20px auto;
+}
+
+.bloc-event figure,
+.wrap-participants
+{
+	width: 35%;
+	height: auto;
+	float: left;
+}
+
+.bloc-event figure img
+{
+	height: 130px;
+	width: 100%;
+
+}
+
+
+.bloc-event .info-event
+{
+	width: 65%;
+	float: right;
+	text-align: center;
+	padding: 1% 2%;
+}
+
+.bloc-event .info-event img
+{
+	max-width: 6%;
+	display: inline-block;
+	float: left;
+}
+
+.bloc-event .info-event p
+{
+	margin-bottom: 20px;
+	font-size: 1.1rem;
+}
+
+.bloc-event .info-event h3
+{
+	font-size: 1.8rem;
+}
+
+.bloc-event .inscription-btn
+{
+	color: black;
+	border: solid 1px black;
+	font-size: 1.1rem;
+	display: block;
+	width: 35%;
+	margin: auto;
+	padding: 10px 0;
+}
+
+.your-events .info-event
+{
+	padding: 3% 2%;
+}
+
+.your-events .wrap-participants
+{
+	border-right: 1px solid lightgrey;
+	padding: 1%;
+	height: auto;
+}
+
+.your-events .wrap-participants img
+{
+	float: left;
+	width: 20px;
+	margin: 7.5px 5% 0 0;
+}
+
+.your-events .wrap-participants img:nth-child(1)
+{
+	width: 50px;
+}
+
+.your-events .wrap-participants p:nth-child(2)
+{
+	padding-top: 20px;
+}
+
+.your-events .wrap-participants p:nth-child(3)
+{
+	clear: both;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+/*-------------------------------------
+----- PERSONNES EN CE MOMENT ----------
+--------------------------------------*/
+
+.who-now .wrap-who
+{
+	background: #F8F8F9;
+	text-align: center;
+	padding: 40px 100px; 
+}
+
+.who-now .wrap-who img
+{
+	display: inline-block;
+	margin-right: 2%;
+}
+
+.who-now .wrap-who img:last-child
+{
+	margin-right: 0;
+}
+
+.who-now .wrap-who .inscription-btn
+{
+	clear: both;
+	display: block;
+	background: #fff;
+	color: #6DECAF;
+	border: solid 1px #6DECAF;
+	font-size: initial;
+	width: 300px;
+	margin: 50px auto 0 auto;
+}
+
+/*-------------------------------------
+------------- ACTU PARIS --------------
+--------------------------------------*/
+
+.news-city article
+{
+	background: #F8F8F9;
+	padding: 40px 100px; 
+}
+
+.news-city article div
+{
+	float: left;
+	width: 40%;
+}
+
+.news-city article div .inscription-btn
+{
+	display: block;
+	background: #fff;
+	color: #6DECAF;
+	border: solid 1px #6DECAF;
+	font-size: initial;
+	width: 350px;
+	margin: 50px auto 0 auto;
+}
+
+.news-city article figure
+{
+	float: right;
+	width: 40%;
+	background: red;
+}
+
+.news-city article figure img
+{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+
+/*-------------------------------------
+--------------------------------------
+------////// C O N T A C T ////// -------
+--------------------------------------
+--------------------------------------*/
+
+.contact
+{
+	padding: 40px 12%;
+}
+
+#contact h2
+{
+	font-size: 3.2rem;
+	letter-spacing: .2rem;
+}
+
+.wrap-form-contact
+{
+	background: #F8F8F9;
+	text-align: center;
+	padding: 3% 18%;
+}
+
+.wrap-form-contact p:first-child span
+{
+	color: #6DECAF;
+}
+
+.wrap-form-contact img
+{
+	display: inline-block;
+	margin: -5px 0 0 80%;
+}
+.wrap-form-contact a
+{
+	display: block;
+	background: #6DECAF;
+	color: #fff;
+	width: 400px;
+	font-size: initial;
+	margin: 30px auto 0 auto;
+	border: none;
+}
+
+.wrap-form-contact form 
+{
+	width: 400px;
+	margin: auto;
+}
+
+.wrap-form-contact form input[type=text],
+.wrap-form-contact form input[type=email],
+.wrap-form-contact form textarea
+{
+	padding: 3%;
+}
+
+.wrap-form-contact form .wrap-form,
+.wrap-form-contact form div textarea
+
+{
+	margin: 10px 0;
+}
+
+.wrap-form-contact form .wrap-form div
+{
+	float: left;
+	width: 50%;
+}
+
+.wrap-form-contact form div input,
+.wrap-form-contact form div textarea
+{
+	width: 100%;
+}
+
+.wrap-form-contact form div:nth-child(3) input
+{
+	display: block;
+	background: #6DECAF;
+	color: #fff;
+	width: 200px;
+	font-size: initial;
+	margin: 10px auto 0 auto;
+	border: none;
+}
+
+.wrap-form-contact p:last-child 
+{
+	margin-top: 60px;
+}
+
+.wrap-form-contact p:last-child a
+{
+	display: inline;
+	color: #6DECAF;
+	background: none;
+}
+
+
+/*-------------------------------------
+--------------------------------------
+/// M E N T I O N S   L E G A L E S ///
+--------------------------------------
+--------------------------------------*/
+
+#mentions-legales h2
+{
+	font-size: 3.2rem;
+	letter-spacing: .2rem;
+}
+
+.mentions-legales 
+{
+	padding: 30px 120px;
+}
+
+.mentions-legales p,
+.mentions-legales strong
+{
+	font-size: 1.4rem;
+	font-weight: 400;
+	text-align: left;
+}
+
+.mentions-legales strong
+{
+	font-size: 2.5rem;
+	display: block;
+	margin: 50px 0;
+}
+
+.mentions-legales div p
+{
+	margin-bottom: 20px;
+}
+
+
+/*-------------------------------------
+--------------------------------------
+------////// F O O T E R ////// --------
+--------------------------------------
+--------------------------------------*/
+
+footer
+{
+	padding: 2% 1%;
+	margin-top: 50px;
+	border-top: 1px solid lightgrey;
+}
+
+
+footer ul,
+footer ul li
+{
+	display: inline-block;
+}
+
+footer ul:first-child
+{
+	width: 20%;
+}
+
+footer ul:first-child img
+{
+	max-width: 90%;
+	width: 100%;
+}
+
+
+footer ul:nth-child(2)
+{
+	width: 40%;
+}
+
+footer ul:first-child li
+{
+	margin-right: 7%;
+}
+
+footer ul:first-child li:nth-child(4)
+{
+	margin-right: 0;
+}
+
+footer ul:nth-child(2) li
+{
+	border-left: solid 1px lightgrey;
+	padding: 1% 2%;
+	text-align: center;
+}
+
+footer form
+{
+	float: right;
+}
+
+
+footer form p
+{
+	margin-right: 20px;
+	float: left;
+}
+
+footer form input:nth-child(2)
+{
+	border: none;
+	background: lightgrey;
+}
+
+footer form input:last-child
+{
+	width: 60px; 
+	color: #6DECAF;
+	border: solid 1px #6DECAF;
+	cursor: pointer;
+}
+
+
+/*---------------------------------------------------------
+------------------------------------------------------------
+------------//////  R E S P O N S I V E //////--------------
+-------------------------------------------------------------
+-----------------------------------------------------------*/
+
+@media screen and (max-width: 1290px) {
+	
+	.become-one .links div:nth-child(2)
+	{
+		float: none;
+		width: 100%;
+	}
+
+	.become-one .links div:nth-child(2) p
+	{
+		text-align: center;
+	}
+
+
+	.become-one .links div:nth-child(3)
+	{
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 1145px) {
+
+	footer ul
+	{
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	footer ul:first-child
+	{
+		width: 100%;
+	}
+
+	footer ul:first-child li
+	{
+		margin-right: 2%;
+	}
+
+	footer ul:first-child li:first-child
+	{
+		display: none;
+	}
+
+	footer ul:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	footer ul:nth-child(2) li:first-child
+	{
+		border: none;
+	}
+
+	footer form
+	{
+		float: none;
+		text-align: center;
+	}
+
+	footer form p
+	{
+		float: none;
+		text-align: center;
+	}
+
+	.our-events,
+	.your-events
+	{
+		width: 100%;
+		float: none;
+	}
+
+	.our-events p:first-child,
+	.your-events p:first-child
+	{
+		font-size: 2.2rem;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+
+	.your-events
+	{
+		float: right;
+		margin-right: 0;
+	}
+
+
+}
+
+@media screen and (max-width: 1005px) {
+
+	.intro
+	{
+		height: 390px;
+		background: lightgrey;
+	}
+	
+	.intro img,
+	.accroche
+	{
+		display: none;
+	}
+
+	.search
+	{
+		margin: auto;
+		top: 20px;
+		width: 60%;
+	}
+
+	.search div:nth-child(4) input
+	{
+		width: 40%;
+		margin: auto;
+	}
+
+	.next-events
+	{
+		padding: 0 7%;
+	}
+
+	.next-events article
+	{
+		float: none;
+		width: 60%;
+		margin: 0 auto 50px auto;
+	}
+
+	.next-events article:last-child
+	{
+		float: none;
+		margin: 0 auto 50px auto;
+	}
+
+	.become-one article
+	{
+		padding: 10px 100px;
+		margin-bottom: 50px;
+	}
+
+	.become-one .wrap-section
+	{
+		height: 400px;
+	}
+
+	.become-one .wrap-section div
+	{
+		padding: 50px 7%;
+	}
+
+	.become-one .wrap-section div p
+	{
+		width: 75%;
+		text-align: center;
+		float: none;
+		margin: auto;
+	}
+
+	.become-one .wrap-section span
+	{
+		float: none;
+		padding: 10px 50px;
+		margin: 40px auto 0 auto;
+	}
+
+	.become-one .links p:first-child
+	{
+		margin-bottom: 10px;
+	}
+
+		.become-one .europe div
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.become-one .europe div p:first-child
+	{
+		font-size: 2.4rem;
+		margin: 60px 0;
+	}
+
+	.become-one .europe img
+	{
+		float: none;
+		margin: auto;
+		max-width: 40%;
+		width: 100%;
+	}
+
+	.banniere
+	{
+		height: 300px;
+	}
+
+	.banniere div p
+	{
+		padding: 100px 200px;
+	}
+
+	.wrap-form-contact form .wrap-form div
+	{
+		float: none;
+		width: 100%;
+	}
+
+	.wrap-form-contact form .wrap-form div:first-child
+	{
+		margin-bottom: 15px;
+	}
+
+}
+
+@media screen and (max-width: 825px) {
+
+	.who-now .wrap-who img
+	{
+		display: none;
+	}
+
+	.who-now .wrap-who .inscription-btn
+	{
+		margin: 0 auto 0 auto;
+	}
+
+	.news-city article div
+	{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.news-city article figure
+	{
+		float: none;
+		width: 90%;
+		margin: 0 auto 30px auto;
+	}
+
+	.wrap-form-contact
+	{
+		padding: 3% 10%;
+	}
+
+	.mentions-legales 
+	{
+		padding: 30px 13%;
+	}
+
+	
+}
+
+@media screen and (max-width: 700px) {
+
+
+	.profile-tabs
+	{
+		width: 100%;
+		position: initial;
+		text-align: center;
+	}
+	
+	.profile-tabs li
+	{
+		display: inline-block;
+		padding: 1%;
+		width: 18%;
+		border-bottom: none;
+		border-right: solid 1px lightgrey;
+		height: 100%;
+	}
+	
+	.profile-tabs li img
+	{
+		width: 20px;
+		height: 30px;
+	}
+
+	.search
+	{
+		width: 81%;
+		margin: auto;
+	}
+
+	.next-events article
+	{
+		width: 100%;
+	}
+
+	.become-one .wrap-section
+	{
+		height: 200px;
+	}
+
+	.become-one .wrap-section div
+	{
+		font-size: 1.4rem;
+		padding: 40px 7%;
+	}
+
+	.become-one .wrap-section div p
+	{
+		display: none;
+	}
+
+	.become-one .europe img
+	{
+		display: none;
+	}
+
+	.banniere
+	{
+		height: 250px;
+	}
+
+	.banniere div p
+	{
+		padding: 70px 160px;
+	}
+
+	.moment-events
+	{
+		padding: 40px 7%; 
+	}
+
+	.news-city article div .inscription-btn
+	{
+		width: 265px;
+		margin: 50px auto 0 auto;
+		font-size: 1.4rem;
+		padding: 10px 5px;
+	}
+
+	.wrap-form-contact
+	{
+		padding: 3% 7%;
+	}
+
+	.wrap-form-contact form 
+	{
+		width: 300px;
+		margin: auto;
+	}
+
+	.wrap-form-contact a
+	{
+		width: 300px;
+	}
+
+	.mentions-legales 
+	{
+		padding: 30px 7%;
+	}
+
+}

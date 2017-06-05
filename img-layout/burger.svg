@@ -1,0 +1,20 @@
+<svg width="30" height="22" viewBox="0 0 30 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>burger</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1010 1014)">
+<g id="burger">
+<g id="Rectangle 3">
+<use xlink:href="#path0_fill" transform="translate(1010 -1014)" fill="#717171"/>
+</g>
+<g id="Rectangle 3 Copy">
+<use xlink:href="#path0_fill" transform="translate(1010 -1004)" fill="#717171"/>
+</g>
+<g id="Rectangle 3 Copy 2">
+<use xlink:href="#path0_fill" transform="translate(1010 -994)" fill="#717171"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 1C 0 0.447715 0.447715 0 1 0L 29 0C 29.5523 0 30 0.447715 30 1C 30 1.55228 29.5523 2 29 2L 1 2C 0.447715 2 0 1.55228 0 1Z"/>
+</defs>
+</svg>

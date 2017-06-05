@@ -1,0 +1,20 @@
+{
+    "name": "marie/tripeet",
+    "authors": [
+        {
+            "name": "marie",
+            "email": "marie.charles@hetic.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "marie\\Controller\\": "Controller/",
+            "marie\\Model\\": "Model/",
+            "marie\\Helper\\": "Helper/"
+        },
+        "files": [
+            "conf/conf.php"
+        ]
+
+    }
+}
